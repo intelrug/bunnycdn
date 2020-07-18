@@ -5,6 +5,10 @@ import { StorageZone } from './models';
 import { BunnyCDNOptions } from './models';
 import { CancelableRequest } from 'got';
 
+export * from './clients';
+export * from './enums';
+export * from './models';
+
 export class BunnyCDN extends HttpBase {
   private readonly _pullZoneClient: PullZoneClient;
   public get pullZone(): PullZoneClient {
