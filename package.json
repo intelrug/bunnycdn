@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "license": "MIT",
   "main": "dist/bunnycdn.js",
-  "typings": "dist/types/bunny.d.ts",
+  "typings": "dist/types/bunnycdn.d.ts",
   "files": [
     "dist/**/*"
   ],
