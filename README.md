@@ -1,6 +1,7 @@
 # @intelrug/bunnycdn
-
-> BunnyCDN node bindings
+<a href="https://www.npmjs.com/package/@intelrug/bunnycdn"><img src="https://img.shields.io/npm/v/@intelrug/bunnycdn" alt="NPM Version" /></a>
+<a href="https://www.npmjs.com/package/@intelrug/bunnycdn"><img src="https://img.shields.io/npm/l/@intelrug/bunnycdn" alt="Package License" /></a>
+<a href="https://www.npmjs.com/package/@intelrug/bunnycdn"><img src="https://img.shields.io/npm/dm/@intelrug/bunnycdn" alt="NPM Downloads" /></a>
 
 ### Install
 
