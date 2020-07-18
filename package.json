@@ -1,5 +1,6 @@
 {
   "name": "@intelrug/bunnycdn",
+  "description": "BunnyCDN node bindings",
   "version": "0.1.2",
   "license": "MIT",
   "main": "dist/bunnycdn.js",
