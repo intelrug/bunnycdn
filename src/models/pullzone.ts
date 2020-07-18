@@ -1,0 +1,70 @@
+import { Host } from './host';
+
+export interface PullZone {
+  Id: number;
+  Name: string;
+  OriginUrl: string;
+  Enabled: boolean;
+  Hostnames: Host[];
+  StorageZoneId: number;
+  AllowedReferrers: string[];
+  BlockedReferrers: string[];
+  BlockedIps: string[];
+  EnableGeoZoneUS: boolean;
+  EnableGeoZoneEU: boolean;
+  EnableGeoZoneASIA: boolean;
+  EnableGeoZoneSA: boolean;
+  EnableGeoZoneAF: boolean;
+  ZoneSecurityEnabled: boolean;
+  ZoneSecurityKey: string;
+  ZoneSecurityIncludeHashRemoteIP: boolean;
+  IgnoreQueryStrings: boolean;
+  MonthlyBandwidthLimit: number;
+  MonthlyBandwidthUsed: number;
+  MonthlyCharges: number;
+  AddHostHeader: boolean;
+  Type: number;
+  CustomNginxConfig: string;
+  AccessControlOriginHeaderExtensions: string[];
+  EnableAccessControlOriginHeader: boolean;
+  DisableCookies: boolean;
+  BudgetRedirectedCountries: string[];
+  BlockedCountries: string[];
+  EnableOriginShield: boolean;
+  CacheControlMaxAgeOverride: number;
+  CacheControlPublicMaxAgeOverride: number;
+  BurstSize: number;
+  RequestLimit: number;
+  BlockRootPathAccess: boolean;
+  BlockPostRequests: boolean;
+  CacheQuality: number;
+  LimitRatePerSecond: number;
+  LimitRateAfter: number;
+  ConnectionLimitPerIPCount: number;
+  PriceOverride: number;
+  AddCanonicalHeader: boolean;
+  EnableLogging: boolean;
+  IgnoreVaryHeader: boolean;
+  EnableCacheSlice: boolean;
+  EdgeRules: string[];
+  EnableWebPVary: boolean;
+  EnableCountryCodeVary: boolean;
+  EnableMobileVary: boolean;
+  EnableHostnameVary: boolean;
+  CnameDomain: string;
+  AWSSigningEnabled: boolean;
+  AWSSigningKey: string | null;
+  AWSSigningSecret: string | null;
+  AWSSigningRegionName: string | null;
+  LoggingIPAnonymizationEnabled: boolean;
+  EnableTLS1: boolean;
+  EnableTLS1_1: boolean;
+  OriginShieldZoneCode: string;
+}
+
+export interface CreatePullZone {
+  Name: string;
+  Type: number;
+  OriginUrl: string;
+  StorageZoneId?: number;
+}
